@@ -5,7 +5,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from joblib import Parallel, delayed
 from scipy.spatial.distance import euclidean, cityblock
 from nltk.metrics import edit_distance
-import PyPDF2
+#import PyPDF2
 from math import sqrt
 from functools import reduce
 import pandas as pd
@@ -266,7 +266,7 @@ def calculate_word_embeddings_similarity(input_sentence, df, glove_embeddings):
 
 
 
-
+"""
 # Function for reading data from a PDF file
 def read_pdf(file_path):
     try:
@@ -279,6 +279,7 @@ def read_pdf(file_path):
     except Exception as e:
         print(f"Error reading PDF: {str(e)}")
         return []
+"""
 
 # Command-line user input function
 def get_user_input():
