@@ -1,0 +1,10 @@
+pandas
+PyPDF
+numpy
+collections
+re
+scikit-learn
+scipy
+joblib
+nltk
+functool
