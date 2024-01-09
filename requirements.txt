@@ -1,5 +1,5 @@
 pandas
-pypdf2
+PyPDF2
 numpy
 collections
 re
