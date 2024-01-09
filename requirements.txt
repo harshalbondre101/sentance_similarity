@@ -7,3 +7,4 @@ scipy
 joblib
 nltk
 functool
+similarityfunction
