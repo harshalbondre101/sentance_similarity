@@ -1,7 +1,7 @@
 # Import necessary libraries
 import streamlit as st
 import pandas as pd
-import PyPDF2
+#import PyPDF2
 import numpy as np
 import re
 from similarityfunction import *
@@ -10,6 +10,7 @@ from similarityfunction import *
 glove_file_path = 'glove.6B.100d.txt'  # Replace with the correct file path
 glove_embeddings = load_glove_model(glove_file_path)
 
+"""
 # Function for reading data from a PDF file
 def read_pdf(file_path):
     try:
@@ -22,7 +23,7 @@ def read_pdf(file_path):
     except Exception as e:
         print(f"Error reading PDF: {str(e)}")
         return []
-
+"""
 # Command-line user input function
 def get_user_input():
     user_input = input("Enter a search term: ")
