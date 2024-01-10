@@ -1,8 +1,6 @@
 scikit-learn
 pandas
 numpy
-collections
-re
 scipy
 joblib
 nltk
