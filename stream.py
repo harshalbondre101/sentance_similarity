@@ -4,7 +4,6 @@ import pandas as pd
 #import PyPDF2
 import numpy as np
 import re
-import sklearn
 from similarityfunction import *
 
 # Example usage:
