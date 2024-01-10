@@ -1,10 +1,11 @@
+sklearn
+scikit-learn
 pandas
 numpy
 collections
 re
-scikit-learn
 scipy
 joblib
 nltk
 functool
-sklearn
+
