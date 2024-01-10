@@ -1,5 +1,6 @@
 from collections import Counter
 import re
+import sklearn
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from joblib import Parallel, delayed
