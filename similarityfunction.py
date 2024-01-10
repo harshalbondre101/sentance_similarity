@@ -253,21 +253,6 @@ def calculate_word_embeddings_similarity(input_sentence, df, glove_embeddings):
 
 
 
-"""
-# Function for reading data from a PDF file
-def read_pdf(file_path):
-    try:
-        with open(file_path, 'rb') as pdf_file:
-            reader = PyPDF2.PdfReader(pdf_file)
-            text = ''
-            for page in reader.pages:
-                text += page.extract_text()
-            return [text]
-    except Exception as e:
-        print(f"Error reading PDF: {str(e)}")
-        return []
-"""
-
 # Command-line user input function
 def get_user_input():
     user_input = input("Enter a search term: ")
