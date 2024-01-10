@@ -94,11 +94,6 @@ def character_search(input_sequence, df):
 
 
 
-# Function for keyword search
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
-import re
-
 def keyword_search(input_words, df):
     # Custom function to preprocess text
     def preprocess_text(text):
@@ -126,12 +121,6 @@ def keyword_search(input_words, df):
     return sorted(results, key=lambda x: x['Occurrences'], reverse=True)[:10]
 
 
-# Function for context search using TF-IDF and Cosine Similarity
-
-import numpy as np
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
-import re
 
 def load_glove_model(glove_file):
     print("Loading GloVe embeddings...")
@@ -241,9 +230,6 @@ def calculate_ngram_similarity_advanced(input_sentence, df):
     return sorted(results, key=lambda x: (x['NGramSimilarity'], -x['DiceCoefficient']), reverse=True)[:10]
 
 # Word Embeddings Similarity Function (using GloVe)
-import numpy as np
-from gensim.models import KeyedVectors
-import pandas as pd
 
 def calculate_word_embeddings_similarity(input_sentence, df, glove_embeddings):
     raw_text_data = df['Sentence'].tolist()
